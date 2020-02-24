@@ -1,0 +1,127 @@
+@import "../../styles/index.scss";
+
+.Window{
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.Game {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.App {
+    @include bgcolor;
+    border-radius: 8px;
+    border: 1px solid #fafafa;
+    margin: 15px;
+    padding: 20px;
+}
+
+.HeaderScores{
+    @include color;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.PlayerScores{
+    color: #353535;
+    font-size: 12px;
+}
+
+.PlayerInput {
+    background-color: #fafafa;
+    border: 0;
+    border-bottom: 1px solid #0da889 !important;
+    color: #353535; 
+    height: 30px;
+    margin: 5px;
+    text-align:center;
+}
+
+.GameHeader {
+    background-color: #fafafa;
+    border-radius: 5px;
+    color: #353535;
+    font-size: 12px;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.GameScores {
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.GameFooter{
+    background-color: #fafafa;
+    border-radius: 5px;
+    color: #353535;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.Score{
+    text-align: center;
+}
+
+.CurrentScore {
+    @include color;
+}
+
+.GameBody {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-top: 10px;
+}
+
+.Button{
+    @include bgcolor;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+}
+
+.Instructions {
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 290px;
+}
+
+.TitleHighestScores {
+    color:#119c7f;
+}
+
+.HighestScores{
+    font-size:13px;
+    margin: 20px 50px;
+    text-align: left; 
+}
+
+.PlayerHighestScores{
+    float:left;
+    font-weight:600;
+    width:70%;
+}
+
+.PointsHighestScores{
+    width:30%;
+    float:right;
+    text-align:right;
+}
+
+

@@ -1,0 +1,23 @@
+@import "../../styles/index.scss";
+
+.Heading{   
+    @include color;
+    font-weight: 600;
+}
+.HowToPlay {
+    font-size: 12px;
+    margin: 20px 15px;
+}
+
+.Tip {
+    padding-top: 10px;
+}
+
+.Headline {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+img {
+    margin-bottom: 30px;
+}

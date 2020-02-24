@@ -1,0 +1,21 @@
+@import "../../styles/index.scss";
+
+.Spot {
+    @include bgcolorsec;
+    align-items: center;
+    border: 1px #eee dashed;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+    span{font-size: 15px;}
+    &:hover {@include bgcolor}
+    &.selected {background-color: #fafafa; border: 1px #0da889 dashed;}
+    &.opened {background-color: #fafafa; border: 1px #0da889 dashed;}
+    &.content-0 {color: #eee ;}
+    &.content-1 {color: #1be7be ;}
+    &.content-2 {color: #10ad8e ;}
+    &.content-3 {color: #09856c; }   
+}
